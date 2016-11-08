@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ilyash
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ilya Shmilove 307634527
+----------------------------------------------------------------------------------------------------------------------------------------------------
+EX4
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Submited files: 
+		README 
+                Echo.h - the header file for the program. 
+                Echo.c - file that contains all the function of the program
+		main.c - the main a c file that calls the function 
+		MAKEFILE - you need to write make in the command line and a echo file will apear. to run the program you need to write ./echo ... 			the port number.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Additional:
+				createSocket - fuunction that create a server socket and return the socket fd.
+				listenAll - function that gets the socket fd of the server and open echo server to all
+				readFromSocket - function that get a socket fd and read all the data in it. in the end the function return all the 					data in string.
+				sig_handler -  Function that get a signal and the turn on a flag to close and free all the memory and sockets in the 					program.
+				finish_the_Server - a global int to know when to close and free all the memory.	
+
+
+

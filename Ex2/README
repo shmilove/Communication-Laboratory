@@ -1,0 +1,32 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ilyash
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ilya Shmilove 307634527
+----------------------------------------------------------------------------------------------------------------------------------------------------
+EX2
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Submited files: 
+		README 
+                Ex2.h - the header file for the program. 
+                Ex2.c - file that contains all the function of the program
+		MAKEFILE
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Additional:
+				struct Vertex: Vertex is a struct that hold vertex in his best nebor vertex and his distance from him. 
+				struct Edge: struct for edge; each edge has 2 vertexes source and destination and allso the weight between 					             them;
+				struct Graph: struct for a graph; each grah hold an arry of the edges and the vertexes the he have;
+				readFromFile: function that read from a file;
+				createEdge: function that get an vertexes source , destination and the weight and create the edge;
+					    after the edge created the function return a pointer to him;
+				createGraph: function that  gets the size of the vertex arry and the size of the edge arry and create graph;
+				createVertex: funtion that create Vertex by the name that given and initilize the dad to null 
+				freeVertex: function that free the vertex from the memory
+				freeGraph: function that free the graph from the memory
+				freeEdge: function that free the edge from the memory
+				printAllVertexesDistance: function that print all the vertexes and there distance from the ver that given 
+				BelmanFord: Function that cheaks the sortest distance between all the vertexes
+				initialize: function that initilize all the vertexes distane to inifinity
+				addVertexToGraph: function that add vertex to the graph if the vertex is allready exist the function return vertex 					pointer to the exist one
+				addEdgeToGraph: function that add edge to the graph
+
+

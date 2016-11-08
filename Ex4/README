@@ -1,0 +1,71 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ilyash
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ilya Shmilove 307634527
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ex2b
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Submited files: 
+		README 
+		Graph.h - the header file for the graph
+		Graph.c - file that contains all the function that create the graph for the ex2b
+                Ex2b.h - the header file for the program. 
+                Ex2b.c - file that contains all the function of the program
+		main.c - the main a c file that calls the function 
+		MAKEFILE - you need to write make in the command line and a test file will apear. to run the program you need to write ./test ... 			mame of the text file then name of the source Router and the time out
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Additional:
+				struct Vertex  - struct for all the vertex data
+				struct Edge - struct for the edge data
+				struct Graph - strcut for all the graph data 		
+				struct Router - struct for each vertex his name and DV
+				createVertex - Function that create vertex, the function gets vertex name, ip, port and the size of the dv,
+	 				in the end the function returns vertex.
+				createEdge -Function that get an vertexes source , destination and the weight and create the edge;
+					after the edge created the function return a pointer to him
+				createGraph - Function that gets vertex arry and size,  and edge arry and size, then initilaize the graph
+				createRouter - Function that gets a vertex and the graph and creates a Router that saves the data of that vertex DV 						and name.
+				freeGraph - Function that free the graph from the memory
+				freeVertex - Function that free the vertex from the memory
+				freeRouter - Function that free the router from the memory
+				freeEdge - Function that free the edge from the memory	
+				readFile - Function that gets file name and reads all the data in it
+				getAllVertexes - Function that gets all the text data on the vertexes and create an arry.
+				numberOfVertexes - Function that read in the file how many vertexes there is and returns the number
+				numberOfEdges - Function that cheaks how many Edges there is in the file and returns the number
+				getArryOfEdges - Function taht read all the text data on the edges and create a arry of them
+				getVertex - Function that gets a vertex name search it in the arry, and return a pointer to that vertex.
+				initilaize - Function that get a vertex name and initiliazle a DV for him and allso a via arry,
+					after that saves the data for all the other vertexes in a diffrent struct.
+				createVia - Function that create a via for a vertex
+				isEqual -Function that create a DV fo r a Vertex;	
+				numberOfNeighbers - Function that cheaks how many Neighbers for the vertex that given and add it to the vertex data
+				createNeighbors - Function that gets a vertex and the number of his neighbors. the Function create a nieghbors arry 
+					and add id to the vertex data.
+				createArryDV - Function that create a arry DV, this arry saves all the DV for all the vertexes
+				getAllRouters - Function that create a Router arry from the Graph data and add it to the graph data
+				createDV - Function the create a DV for a vertex and add it to the vertex data
+				Data - struct that contains all the data for each thread 
+				DataForCalcu - struct for the data i want to send to the calculator function.
+				createThreads - Function that create threads each thread gets a data struct.
+				createSocket - Function that create a socket and return the the fd if the create faild the function return -1.
+				receiver - Function that gets a struct data and check if need to change dv
+				sender - Function that gets a struct data and send dv to all the neighbors.
+				AsciiName - Function that get a string ant return the ascii value of that string
+				createSocketReceiver - Function that create socket for server the function get ip port and the server name.
+				calculator - 	Function that calculate the best dv, if there is no more improves from the neighbors the calculator 						ends the program.
+				freeDataForCalcu - Function that free all the data in DataForCalcu struct
+				findMyIndex - Function that serach a name in arry and return the index 
+				initilaizeArry - Function that get an arry, and puts -1 in each cell
+				findRouter - Function that gets a Router arry and a name of a Router to search in the arry, the function return a 						pointer to that Router.
+				changeDv - Function that gets a new dv and replace it with the old one
+				printTheEnd - Function that print the Routing table of the Vertex taht given
+				getWeight - Function that serch the weight between two vertexes and return it.
+ 
+				
+				
+
+
+
+
